@@ -1,0 +1,17 @@
+{
+    "name": "messagingsystem",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "npm run setup:server",
+        "setup:app": "npm run setup:server && npm run setup:client",
+        "setup:client": "cd messagingSystem.client && npm i",
+        "setup:server": "cd messagingSystem && npm i",
+        "start": "node messagingSystem/index.js"
+    },
+    "engines": {
+        "node": "^14.17.0"
+    },
+    "dependencies": {
+        "@cometchat-pro/chat": "^3.0.2-beta1"
+    }
+}
